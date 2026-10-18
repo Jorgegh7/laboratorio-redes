@@ -1,0 +1,6 @@
+20:01:39.509402 e2:2e:e9:dc:1a:ad > ff:ff:ff:ff:ff:ff, ethertype ARP (0x0806), length 42: Request who-has 10.10.0.2 tell 10.10.0.1, length 28
+20:01:39.509414 2a:ca:d2:bc:03:a3 > e2:2e:e9:dc:1a:ad, ethertype ARP (0x0806), length 42: Reply 10.10.0.2 is-at 2a:ca:d2:bc:03:a3, length 28
+20:01:39.509420 e2:2e:e9:dc:1a:ad > 2a:ca:d2:bc:03:a3, ethertype IPv4 (0x0800), length 98: 10.10.0.1 > 10.10.0.2: ICMP echo request, id 32517, seq 1, length 64
+20:01:39.509431 2a:ca:d2:bc:03:a3 > e2:2e:e9:dc:1a:ad, ethertype IPv4 (0x0800), length 98: 10.10.0.2 > 10.10.0.1: ICMP echo reply, id 32517, seq 1, length 64
+20:01:40.541475 e2:2e:e9:dc:1a:ad > 2a:ca:d2:bc:03:a3, ethertype IPv4 (0x0800), length 98: 10.10.0.1 > 10.10.0.2: ICMP echo request, id 32517, seq 2, length 64
+20:01:40.541518 2a:ca:d2:bc:03:a3 > e2:2e:e9:dc:1a:ad, ethertype IPv4 (0x0800), length 98: 10.10.0.2 > 10.10.0.1: ICMP echo reply, id 32517, seq 2, length 64
