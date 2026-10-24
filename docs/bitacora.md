@@ -20,5 +20,11 @@ Para esto se utilizando los siguientes comandos:
 - Se eliminan las NS: 'sudo ip netns del ns1' / 'sudo ip netns del ns2'
 
 
+## Fecha
+2026-10-24
 
+- Tres scripts (`setup.sh`, `teardown.sh`, `verify.sh`): levantan, borran y comprueban el laboratorio con un comando cada uno. `setup.sh` se puede repetir porque primero borra lo anterior.
+- Captura en `capturas/arp-icmp.pcap`: ARP por broadcast, respuesta unicast, dos pings y, unos 5 segundos después, un ARP unicast de revalidación. Las MAC cambian cada vez que se corre `setup.sh`.
+- TTL: con `ping -t 1` hacia `8.8.8.8` contestó mi router (`time exceeded`), y entre `ns1` y `ns2` responde igual, porque no hay routers en medio. `traceroute` a `8.8.8.8` dio 7 saltos.
+- Error útil: un `$EUO` mal escrito detuvo `verify.sh` por `set -u`.
 
