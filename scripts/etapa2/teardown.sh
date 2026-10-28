@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-if [ "EUID" -ne 0 ]; then
+if [ "$EUID" -ne 0 ]; then
   echo "Ejecuta este script con sudo."
   exit 1
 else
